@@ -14,7 +14,7 @@ h1 {
     grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(5, auto);
     /* padding: 10px; */
-    width: 50vw;
+    width: 40vw;
     gap: 0px;
     justify-content: center;
     margin: auto;
@@ -23,7 +23,7 @@ h1 {
 .board div {
     background-color: white;
     border: 2px solid black;
-    width: 10vw;
+    width: 8vw;
     aspect-ratio: 1 / 1;
     /* width: 150px;
     height: 150px; */
