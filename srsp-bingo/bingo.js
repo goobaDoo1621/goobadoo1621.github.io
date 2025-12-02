@@ -67,6 +67,13 @@ function tileFunct(event) {
     }
 }
 
+function resetBoard() {
+    for(let i = 0; i < bSize; i++) {
+        board[i].style.setProperty("background-color", "white");
+    }
+    board[12].style.setProperty("background-color", "rgb(253, 183, 25)");
+}
+
 
 const b = document.querySelector(".board").children;
 const bSize = 25;
@@ -80,5 +87,7 @@ for(let i = 0; i < bSize; i++) {
     board[i].addEventListener("mouseout", tileFunct);
 }
 
-let refreshButton = document.getElementById("r-butt");
-refreshButton.addEventListener("click", generateBoard);
+let newButton = document.getElementById("n-butt");
+newButton.addEventListener("click", generateBoard);
+let resetButton = document.getElementById("r-butt");
+resetButton.addEventListener("click", resetBoard);
