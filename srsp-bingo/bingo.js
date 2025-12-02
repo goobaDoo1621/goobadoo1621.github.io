@@ -87,7 +87,7 @@ for(let i = 0; i < bSize; i++) {
     board[i].addEventListener("mouseout", tileFunct);
 }
 
-let newButton = document.getElementById("n-butt");
-newButton.addEventListener("click", generateBoard);
 let resetButton = document.getElementById("r-butt");
+let newButton = document.getElementById("n-butt");
 resetButton.addEventListener("click", resetBoard);
+newButton.addEventListener("click", generateBoard);
