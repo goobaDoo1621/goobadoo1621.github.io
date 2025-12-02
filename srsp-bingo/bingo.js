@@ -30,12 +30,20 @@ const bingoCards = [
     "Tipperary",
     "Mentions weather of a football game",
     "\"Go tigers\"",
-    "Marching 4 to 5 through NYC"
+    "Marching 4 to 5 through NYC",
+    "\"Mizzou was not my first choice\"",
+    "K-State field goal",
+    "Drake reference",
+    "Whataburger",
+    "Stripper shenanigans (yes, seriously)",
+    "\"I\'ve been here for 5 years...\"",
+    "Pre-written speech",
+    "Bad advice"
 ];
 
 
 function randomSubset(arr, k) {
-    const a = arr.slice(); // copy
+    const a = arr.slice();
     for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [a[i], a[j]] = [a[j], a[i]];
