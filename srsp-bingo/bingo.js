@@ -50,20 +50,20 @@ function generateBoard() {
         board[i].style.setProperty("background-color", "white")
     }
     board[12].textContent = "Free";
-    board[12].style.setProperty("background-color", "gold");
+    board[12].style.setProperty("background-color", "rgb(253, 183, 25)");
 }
 
 function tileFunct(event) {
-    if(event.type === "mouseover" && getComputedStyle(this).backgroundColor !== "rgb(255, 215, 0)") {
-        this.style.setProperty("background-color", "lightgreen");
+    if(event.type === "mouseover" && getComputedStyle(this).backgroundColor !== "rgb(253, 183, 25)") {
+        this.style.setProperty("background-color", "rgb(255, 223, 165)");
     }
 
-    if(event.type === "mouseout" && getComputedStyle(this).backgroundColor !== "rgb(255, 215, 0)") {
+    if(event.type === "mouseout" && getComputedStyle(this).backgroundColor !== "rgb(253, 183, 25)") {
         this.style.setProperty("background-color", "white");
     }
 
-    if(event.type === "click" && getComputedStyle(this).backgroundColor !== "rgb(255, 215, 0)") {
-        this.style.setProperty("background-color", "gold");
+    if(event.type === "click" && getComputedStyle(this).backgroundColor !== "rgb(253, 183, 25)") {
+        this.style.setProperty("background-color", "rgb(253, 183, 25)");
     }
 }
 
@@ -79,3 +79,6 @@ for(let i = 0; i < bSize; i++) {
     board[i].addEventListener("mouseover", tileFunct);
     board[i].addEventListener("mouseout", tileFunct);
 }
+
+let refreshButton = document.getElementById("r-butt");
+refreshButton.addEventListener("click", generateBoard);

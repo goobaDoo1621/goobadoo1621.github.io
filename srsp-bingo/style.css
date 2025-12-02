@@ -7,14 +7,15 @@ h1 {
     text-align: center;
     color: black;
     font-size: 40px;
+    text-shadow: -1px 0 1px rgb(253, 183, 25), 0 1px 1px rgb(253, 183, 25), 1px 0 1px rgb(253, 183, 25), 0 -1px 1px rgb(253, 183, 25);
+    /* text-shadow: 1px 1px 3px rgb(253, 183, 25); */
 }
 
 .board {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* padding: 10px; */
     width: 90vw;
-    max-width: 800px;
+    max-width: 700px;
     gap: 0px;
     margin: auto;
 }
@@ -22,10 +23,7 @@ h1 {
 .board div {
     background-color: white;
     border: 2px solid black;
-
     aspect-ratio: 1 / 1;
-    /* width: 150px;
-    height: 150px; */
 
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -40,3 +38,25 @@ h1 {
     justify-content: center;
 }
 
+button {
+    display: block;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 1.75vw auto;
+    padding: 5px;
+    font-size: x-large;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(212, 212, 212);
+    
+}
+
+button:active {
+    background-color: white;
+}
