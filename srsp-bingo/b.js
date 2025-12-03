@@ -31,14 +31,17 @@ const bingoCards = [
     "Mentions weather of a football game",
     "\"Go tigers\"",
     "Marching 4 to 5 through NYC",
-    "\"Mizzou was not my first choice\"",
+    "\"Mizzou was\'t my first choice\"",
     "K-State field goal",
     "Drake reference",
     "Whataburger",
     "Stripper shenanigans (yes, seriously)",
     "\"I\'ve been here for 5 years...\"",
     "Pre-written speech",
-    "Bad advice"
+    "Bad advice",
+    "\"It all went by so quick\"",
+    "Roommate shoutout",
+    "Band camp story"
 ];
 
 
